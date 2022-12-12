@@ -1,0 +1,25 @@
+.container-heading{
+    text-align: center;
+}
+.input-label {
+    width: 25%;
+    margin: .5%;
+}
+.input-label-child {
+    width: 25%;
+    margin: .5%;
+    padding-right: 1%;
+    text-align: end;
+}
+.input-label-center {
+    margin: .5%;
+    padding-right: 1%;
+    text-align: center;
+    width: 100%;
+}
+.form-control {
+    width: 50%;
+}
+.grid {
+    width: 50%;
+}
