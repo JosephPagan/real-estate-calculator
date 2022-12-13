@@ -20,6 +20,10 @@
 .form-control {
     width: 50%;
 }
+.single{
+    width: 25%;
+    margin: 0 37.5%;
+}
 .grid {
     width: 50%;
 }
