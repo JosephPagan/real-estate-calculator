@@ -68,7 +68,7 @@ function calcMonthExp() {
 }
 
 function amortizeFiveYear() {
-    let principal = Number(purchPrice.value)
+    let principal = Number(loanAmt.value)
     let mort = Number(mortgage.value)
     
     for (x = 0; x < 48; x++) {
@@ -80,22 +80,29 @@ function amortizeFiveYear() {
 }
 
 function calcRIO(salePrice) {
-    console.log(salePrice)
+    // console.log(salePrice)
     let realtorFees = Math.round(salePrice * 0.06)
-    let closingCosts = 5000
+    let closingCosts = 4000
     let sellingRepairs = 5000
     let salesExpenses = realtorFees + closingCosts + sellingRepairs
     let loanPayoff = amortizeFiveYear()
+    console.log(loanPayoff)
     let totalInvestedCap = Number(cashReq.value)
     let profit = salePrice - salesExpenses - loanPayoff - totalInvestedCap
     let cashflow = (totalIncome.value - monthExpTotal.value) * 12
-    let totalProfit = profit + cashflow
+    let totalProfit = profit + (cashflow * 5)
     let roi = (totalProfit / totalInvestedCap) / 5
     return `${Math.round(roi * 100)} %`
 }
 
 function calcAppreciation() {
-    let price = Number(purchPrice.value) + Number(totalRepairCost.value)
+    let price;
+    if (expValue.value) {
+        price = Number(expValue.value)
+    } else {
+        price = Number(purchPrice.value) + Number(totalRepairCost.value)
+        expValue.value = price
+    }
     let y1 = price + (price * 0.02)
     let y2 = y1 + (y1 * 0.02)
     let y3 = y2 + (y2 * 0.02)
@@ -107,7 +114,6 @@ function calcAppreciation() {
     app3.innerText = `$ ${Math.round(y3)}`
     app4.innerText = `$ ${Math.round(y4)}`
     app5.innerText = `$ ${Math.round(y5)}`
-
 
     returnOnInvestment.innerText = calcRIO(y5)
 }
@@ -145,7 +151,7 @@ function evalProperty() {
     let sum = Number(totalIncome.value) - Number(monthExpTotal.value)
     cashFlow.innerText = `$ ${sum}`
     annualCashFlow.innerText = `$ ${sum * 12}`
-    console.log(sum * 12)
+    // console.log(sum * 12)
 
     let cashOnCashRet = ((sum * 12) / Number(cashReq.value)) * 100
 
