@@ -1,4 +1,24 @@
-.container-heading{
+/* 
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Yatra One', cursive; 
+*/
+
+body{
+    background-image: url("images/background3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    margin: 2% 0;
+    padding-left: 2%;
+}
+.container-lg {
+    opacity: 0.85;
+    background-image: url("images/inputBackground.jpg");
+}
+.container-heading {
     text-align: center;
 }
 .input-label {
@@ -6,7 +26,7 @@
     margin: .5%;
 }
 .input-label-child {
-    width: 25%;
+    width: 45%;
     margin: .5%;
     padding-right: 1%;
     text-align: end;
@@ -26,4 +46,14 @@
 }
 .grid {
     width: 50%;
+}
+.eval {
+    width: 45%;
+    margin: 2% 27.5%;
+}
+.result{
+    text-align: end;
+}
+.headingText {
+    font-family: 'Allerta Stencil', sans-serif;
 }

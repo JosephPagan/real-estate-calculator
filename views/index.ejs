@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Allerta+Stencil&family=Yatra+One&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/homeStyle.css">
 </head>
 <body>
     <nav>
-        <h1>Investment Property Analyzer</h1>
+        <h1 class="headingText">Investment Property Analyzer</h1>
+        <h2 class="headingText">New York State</h2>
 
     </nav>
     
@@ -40,73 +46,73 @@
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Demolition</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Sheetrock</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Plumbing</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Carpentry</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Electrical</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Painting</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">HVAC</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Cabinets</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Appliances</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Doors</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Flooring</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Insulation</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
             </div>
@@ -115,73 +121,73 @@
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Roof</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Concrete</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Gutters</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Garage</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Siding</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Windows</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Landscaping</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Painting</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Septic</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Deck</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Foundation</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
                 <div class="input-group mb-3 grid">
                     <label class="input-label-child">Other</label>
                     <span class="input-group-text">$</span>
-                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcExpenses()">
+                    <input type="text" class="form-control expense" aria-label="Amount (to the nearest dollar)" onchange="calcRepairs()">
                     <span class="input-group-text">.00</span>
                 </div>
             </div>
@@ -234,7 +240,7 @@
         <h2 class="container-heading">Total Income</h2>
         <div class="input-group mb-3 single">
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <input type="text" class="form-control" id="totalIncome" aria-label="Amount (to the nearest dollar)" onchange="calcSavings(), calcMonthExp()">
             <span class="input-group-text">.00</span>
         </div>
     </div>
@@ -244,97 +250,103 @@
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Mortgage</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" id="mortgageTwo" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" id="mortgageTwo" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Taxes</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" id="taxSaving" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Insurance</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" id="mortInsurance" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" id="mortInsurance" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Flood Insurance</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
-                <label class="input-label-child">Vacancy</label>
+                <label class="input-label-child">Vacancy (5% of Income)</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" id="vacancyExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
+                <span class="input-group-text">.00</span>
+            </div>
+            <div class="input-group mb-3 grid">
+                <label class="input-label-child">Repair Savings (5% of Income)</label>
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control monthExp" id="repairSavingExpense" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Capital Expenditures</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Water</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Sewer</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Garbage</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Gas</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Electric</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">HOA Expenses</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Snow Removal</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Lawn Care</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Property Management</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" id="propManageSav" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
             <div class="input-group mb-3 grid">
                 <label class="input-label-child">Other</label>
                 <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control monthExp" aria-label="Amount (to the nearest dollar)" onchange="calcMonthExp()">
                 <span class="input-group-text">.00</span>
             </div>
 
@@ -343,50 +355,60 @@
         <div class="input-group mb-3">
             <label class="input-label-child">Total Expenses</label>
             <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <input type="text" class="form-control" id="totalMonthExp" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <div class="container-lg border">
+        <h2 class="container-heading">Expected Value After Repairs</h2>
+        <div class="input-group mb-3 single">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" id="expValue" aria-label="Amount (to the nearest dollar)" onchange="calcSavings(), calcMonthExp()">
             <span class="input-group-text">.00</span>
         </div>
     </div>
     <div class="container-lg border">
         <h2 class="container-heading">Evaluation</h2>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-outline-primary eval" onclick="evalProperty()">Evaluate!</button>
+        </div>
+        
+        <div class="input-group mb-3 single">
+            <label class="input-label-child">Cash Flow</label>
+            <h3 class="container-heading result" id="cashFlow"></h3>
+        </div>
+        <div class="input-group mb-3 single">
+            <label class="input-label-child">Annual Cash Flow</label>
+            <h3 class="container-heading result" id="annCashFlow"></h3>
+        </div>
         <div class="input-group mb-3 single">
             <label class="input-label-child">CoCRIO</label>
-            <h3 class="container-heading"></h3><span class="input-group-text">%</span>
+            <h3 class="container-heading result" id="cocrio"></h3>
         </div>
-        <h3 class="container-heading">5 Year Appreciation</h3>
+        <h3 class="container-heading">5 Year Appreciation (2%)</h3>
         <div class="input-group mb-3">
             <label class="input-label-child">Year 1</label>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
+            <h3 class="container-heading result" id="app1"></h3>
         </div>
         <div class="input-group mb-3">
             <label class="input-label-child">Year 2</label>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
+            <h3 class="container-heading result" id="app2"></h3>
         </div>
         <div class="input-group mb-3">
             <label class="input-label-child">Year 3</label>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
+            <h3 class="container-heading result" id="app3"></h3>
         </div>
         <div class="input-group mb-3">
             <label class="input-label-child">Year 4</label>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
+            <h3 class="container-heading result" id="app4"></h3>
         </div>
         <div class="input-group mb-3">
             <label class="input-label-child">Year 5</label>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
+            <h3 class="container-heading result" id="app5"></h3>
         </div>
         <div class="input-group mb-3 single">
             <label class="input-label-child">Return On Investment</label>
-            <h3 class="container-heading"></h3><span class="input-group-text">%</span>
+            <h3 class="container-heading" id="roi"></h3>
         </div>
     </div>
     <script src="js/calculatorScript.js"></script>
