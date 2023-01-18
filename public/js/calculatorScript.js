@@ -53,7 +53,7 @@ function calcTaxes() {
 
 function calcSavings() {
     let amt = totalIncome.value * 0.05
-    let propertyManageAmt = totalIncome.value * 0.11
+    let propertyManageAmt = totalIncome.value * 0.08
     vacExp.value = amt
     repSavExp.value = amt
     propManExp.value = propertyManageAmt
@@ -80,13 +80,11 @@ function amortizeFiveYear() {
 }
 
 function calcRIO(salePrice) {
-    // console.log(salePrice)
     let realtorFees = Math.round(salePrice * 0.06)
     let closingCosts = 4000
     let sellingRepairs = 5000
     let salesExpenses = realtorFees + closingCosts + sellingRepairs
     let loanPayoff = amortizeFiveYear()
-    console.log(loanPayoff)
     let totalInvestedCap = Number(cashReq.value)
     let profit = salePrice - salesExpenses - loanPayoff - totalInvestedCap
     let cashflow = (totalIncome.value - monthExpTotal.value) * 12
@@ -136,7 +134,6 @@ function calcRepairs() {
     let sum = 0;
     for (x = 0; x < repairExpenses.length; x++) {
         sum+= Number(repairExpenses[x].value)
-        // console.log(repairExpenses[x].value)
     }
     totalRepairCost.value = sum
     calcCosts()
@@ -151,7 +148,6 @@ function evalProperty() {
     let sum = Number(totalIncome.value) - Number(monthExpTotal.value)
     cashFlow.innerText = `$ ${sum}`
     annualCashFlow.innerText = `$ ${sum * 12}`
-    // console.log(sum * 12)
 
     let cashOnCashRet = ((sum * 12) / Number(cashReq.value)) * 100
 
